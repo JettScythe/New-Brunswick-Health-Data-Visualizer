@@ -4,15 +4,8 @@ version = "0.1.0"
 description = "Local-first tool for visualizing and analyzing medical lab data"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = [
-    "matplotlib>=3.10.9",
-    "pandas>=3.0.2",
-]
+dependencies = ["matplotlib>=3.10.9", "pandas>=3.0.2"]
 
 
-[project.scripts]
-labviz = "cli:main"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+[dependency-groups]
+dev = ["commitizen>=4.16.0", "pre-commit>=4.6.0"]
